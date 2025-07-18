@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ถึงแฟน</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Prompt', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      background: linear-gradient(to bottom right, #ffe6f0, #ffcce0);
+      color: #ff1493;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.3em;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.8rem;
+      text-align: center;
+    }
+
+    .heart {
+      position: absolute;
+      font-size: 2rem;
+      animation: floatUp 5s linear infinite;
+      color: #ff69b4;
+      opacity: 0.8;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(100vh) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) scale(1.5);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>รักนะจุ้บๆ 💖</h1>
+  <p>สู้ๆนะ ขอให้สอบผ่าน ✨📚</p>
+
+  <!-- หัวใจลอยหลายดวง -->
+  <script>
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.textContent = '💗';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (3 + Math.random() * 2) + 's';
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 5000);
+    }
+
+    setInterval(createHeart, 400);
+  </script>
+</body>
+</html>
