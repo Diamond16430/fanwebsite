@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ถึงแฟน</title>
+  <style>
+    body {
+      font-family: 'Arial';
+      text-align: center;
+      margin-top: 100px;
+      background-color: #fff0f5;
+      color: #ff69b4;
+    }
+    h1 {
+      font-size: 3em;
+    }
+    p {
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <h1>รักนะจุ๊บๆ</h1>
+  <p>สูัๆนะขอให้สอบผ่าน 💖</p>
+</body>
+</html>
